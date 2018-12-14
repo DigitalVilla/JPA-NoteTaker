@@ -1,0 +1,246 @@
+:root {
+    --background: #eeeeee;
+    --font-White-l:#35353544;
+    --font-color: #777777;
+    --font-White2: #00d3a5;
+    --login-Msg:#ff90a8;
+    --header-BG:#00d3a5;
+    --header-font: #f0f0f0;
+    --header-Sub: #f0f0f0;
+    --mainColor:#00d3a5;
+    --add-form:#62687d22;
+    --btn-link-l:#00a77dd3;
+    --option-bg:#9598a122;
+    --add-input-bg:#ffffff;
+    --add-input-border:#00d3a557;
+    --input-placeholder:#00d351;
+   
+    --option-header:#00d3a5;
+    --option-header-font:#f0f0f0;
+    --option-line:#12954f80;
+}
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size: 1rem == 10px; */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    background-color: var(--background);
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+.card input {
+    margin: .5rem;
+    height: 5rem;
+    width: 100%;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    border: none;
+}
+
+#loginBtn {
+    margin: 2rem 0;
+    width: 100% !important;
+    height: 5rem;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 2rem 0
+}
+
+.card {
+    color: var(--font-color);
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+
+    /*border: 1px solid red;*/
+}
+
+
+
+form {
+    width: 80%;
+    margin: auto;
+    /*background: red;*/
+}
+
+/* login mesage  */
+form h4 {
+    text-align: center;
+    color: var(--login-Msg);
+}
+
+
+.header {
+    background: var(--header-BG);
+    color: var(--header-font);
+    margin-bottom: 1.6rem;
+    padding: 1.6rem 0;
+}
+
+.header__title {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.header__subtitle {
+    color: var(--header-Sub);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.widget-header {
+    background: var(--option-header);
+    color: var(--option-header-font);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+}
+
+
+[type="submit"] {
+    background: var(--mainColor);
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+
+.button,
+[type="submit"] {
+    color: white;
+    font-weight: 500;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.card2 {
+    color: var(--font-color);
+    width: 500px;
+    margin-top: 5rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.add-option {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.6rem;
+    background: var(--add-form);
+    margin-bottom: 2rem;
+}
+
+.add-option__input {
+    background: var(--add-input-bg);
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    color: var(--font-color);
+    border-bottom: 0.3rem solid var(--add-input-border);
+    flex-grow: 3;
+    /*margin: 0 0 1.2rem 0;*/
+    padding: 1.2rem;
+    height: 5rem;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--input-placeholder);
+    opacity: 1;
+    /* Firefox */
+    font-size: 1.8rem;
+}
+
+.add-option button {
+    height: 5rem;
+    width: 8rem;
+    margin-left: 1rem;
+
+}
+
+/*.widget-header > button:nth-child(2).*/
+.button--link {
+    background: none;
+    border: none;
+    color: var(--btn-link-l);
+    padding: 0;
+}
+
+.option {
+    border-bottom: 1px solid var(--option-line);
+    display: flex;
+    justify-content: space-between;
+    padding: 2.2rem 1.6rem;
+    background: var(--option-bg);
+
+}
+
+.option__text {
+    color: var(--font-White2);
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 0;
+    word-break: break-all;
+}
+
+.control a.button--link {
+    font-size: 1.5rem;
+    padding: .2rem 0;
+    text-decoration: none;
+    border-bottom: 2px solid var(--btn-link-l);
+
+}
+
+.widget-header__title + .button--link{
+    color: #e4e4e4;
+}
+
+.option a.button--link {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+
+.noteMsg {
+    text-align: center;
+    color: var(--font-White-l);
+    margin: 1rem;
+}
+
+.widget-header a.button--link {
+    font-size: 1.7rem;
+}
