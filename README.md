@@ -1,4 +1,4 @@
-# JPA-Note-taker
+# JSP-Note-taker
 > A JPA Application to play with Cookies, Sessions and localStorage
 
 ![](screen.png)
